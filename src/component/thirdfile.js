@@ -1,27 +1,22 @@
-import React from 'react'
+import React, { useState } from 'react'
 
-class Form extends React.Component{
-     constructor(props){
-         super(props)
-         this.state={name:''}
-        //  this.chan=this.chan.bind(this)
-     }
-     inp=(e)=>{
-this.setState({
-    name:e.target.value
-})
-}
-
-    render(){
-        return (
-        <div><div>{this.state.msg}</div>
-            {/* <button onClick={this.chan.bind(this)}>click</button> */}
-            {/* <button onClick={()=>{this.chan()}}>click</button> */}
-            <label for="name">name</label>
-            <input onInput={this.inp} id="name" type="text" value={this.state.name}/><br/>
-        <label >{this.state.name}</label>
+function Form(){
+    const [ name, setName ]=useState('ff')
+    function inp(e){
+        console.log(e.target.value)
+        setName(
+            e.target.value
+        )
+        
+    }
+    return (
+        <div>
+            <label htmlFor="namve">name</label>
+            <input onChange={inp} id="namve" type="text" value={name} /><br/>
+            <label >{name}</label>
         </div>
         )
-    }
 }
+
+
 export default Form;
