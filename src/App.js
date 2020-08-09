@@ -2,14 +2,14 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Sample from './sample.js';
-import Firstfile from './component/firstfile.js';
+import BasicRoutes from './routes/basicRoute'
+
 
 function App() {
   return (
     <div className="App">
-      fxxxxxxxxxaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+      < BasicRoutes />
       < Sample />
-      < Firstfile />
     </div>
   );
 }
