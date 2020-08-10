@@ -1,5 +1,5 @@
 import React from 'react';
-function second({name}){
+function Second({name}){
     console.log(this)
     return(
         <div>
@@ -7,4 +7,4 @@ function second({name}){
         </div>
     )
 }
-export default second;
+export default Second;
